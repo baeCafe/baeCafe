@@ -43,6 +43,7 @@
 			<br>
 			<div class="box-element " id="payment-info">
 				<small>Payment Options</small>
+				<button id="make-payment">Make payment</button>
 			</div>
 			
 		</div>
@@ -67,4 +68,25 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		function submitFormData(){
+	    	
+
+	    var userFormData = {
+				'name':null,
+				'email':null,
+				'total':total,
+				'address':null,
+				'city':null,
+				'state':null,
+				'pincode':null,
+		}
+		if (user == 'AnonymousUser'){
+	    		userFormData.name = form.name.value
+	    		userFormData.email = form.email.value
+	    	}
+			console.log('User Info:', userFormData)
+	}
+	</script>
 {% endblock content %}
