@@ -18,6 +18,10 @@ def store(request):
      context = {'products':products}
      return render(request, 'store/store.html', context)
 
+def home(request):
+     context = {}   
+     return render(request, 'store/home.html', context)
+
 def cart(request):
      if request.user.is_authenticated:
           customer = request.user.customer

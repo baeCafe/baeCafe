@@ -1,0 +1,166 @@
+{% extends 'store/main.html' %}
+{% load static%}
+{% block content %}
+
+<div class="homeimage">
+       <img width="100%" src="../static/images/intro.jpg">
+</div>
+   <br>
+   <h3 style="color:#4f868c"><u>Best Sellers</u></h3>
+<div class="row">
+    <div class="col-lg-4">
+         <img class="thumbnail" src="../static/images/cookies.jpg" >
+           <div class="box-element product">
+             <h6><strong>Cookies</strong></h6>
+             <hr>
+          
+             <a class="btn btn-outline-success" href="{% url 'store' %}">View</a>
+             <h4 style="display: inline-block;float:  right">Rs.80</h4>
+            </div>
+    </div>
+
+    <div class="col-lg-4">
+        <img class="thumbnail" src="../static/images/mojito.jpg">
+        <div class="box-element product">
+            <h6><strong>Virgin Mojito</strong></h6>
+            <hr>
+           
+            <a class="btn btn-outline-success" href="{% url 'store' %}">View</a>
+            <h4 style="display: inline-block;float:  right">Rs.60</h4>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <img class="thumbnail" src="../static/images/unniyappam.jpg">
+        <div class="box-element product">
+            <h6><strong>Uniyappam</strong></h6>
+            <hr>
+           
+            <a class="btn btn-outline-success" href="{% url 'store' %}">View</a>
+            <h4 style="display: inline-block;float:  right">Rs.60</h4>
+        </div>
+    </div>
+</div>
+   <br>
+   <h3 style="color:#4f868c"><u>Combos</u></h3>
+<div class="row">
+    <div class="col-lg-4">
+        <img class="thumbnail" src="../static/images/cakes.jpg">
+        <div class="box-element product">
+            <h6><strong>Desserts</strong></h6>
+            <hr>
+       
+            <a class="btn btn-outline-success" href="{% url 'store' %}">View</a>
+            <h4 style="display: inline-block;float:  right">Rs.650</h4>
+        </div>
+    </div>
+    
+    <div class="col-lg-4">
+        <img class="thumbnail" src="../static/images/Kerala nadan.jpg">
+        <div class="box-element product">
+            <h6><strong>Ethinic Snacks</strong></h6>
+            <hr>
+           
+            <a class="btn btn-outline-success" href="{% url 'store' %}">View</a>
+            <h4 style="display: inline-block;float:  right">Rs.90</h4>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <img class="thumbnail" src="../static/images/jucessss.jpg">
+        <div class="box-element product">
+            <h6><strong>Eve Snacks</strong></h6>
+            <hr>
+           
+            <a class="btn btn-outline-success" href="{% url 'store' %}">View</a>
+            <h4 style="display: inline-block;float:  right">Rs.260</h4>
+        </div>
+    </div>
+</div>
+   <br>
+   <h3 style="color:#4f868c"><u>Seasonals</u></h3>
+<div class="row">
+        <div class="col-lg-4">
+            <img class="thumbnail" src="../static/images/dry_fruits.jpg">
+            <div class="box-element product">
+                <h6><strong>Dry Friuts</strong></h6>
+                <hr>
+                
+                <a class="btn btn-outline-success" href="{% url 'store' %}">View</a>
+                <h4 style="display: inline-block;float:  right">Rs.450</h4>
+            </div>
+        </div>
+        
+        <div class="col-lg-4">
+            <img class="thumbnail" src="../static/images/juice.jpg">
+            <div class="box-element product">
+                <h6><strong>Fresh Juice</strong></h6>
+                <hr>
+               
+                <a class="btn btn-outline-success" href="{% url 'store' %}">View</a>
+                <h4 style="display: inline-block;float:  right">Rs.50</h4>
+            </div>
+        </div>
+    
+        <div class="col-lg-4">
+            <img class="thumbnail" src="../static/images/mojito.jpg">
+            <div class="box-element product">
+                <h6><strong>Virgin Mojito</strong></h6>
+                <hr>
+              
+                <a class="btn btn-outline-success" href="{% url 'store' %}">View</a>
+                <h4 style="display: inline-block;float:  right">Rs.50</h4>
+            </div>
+        </div>
+</div> 
+    <br>
+    <h3 style="color:#4f868c"><u>Contact Us</u></h3>
+    <p><strong>Swing by for a cup of coffee, or leave us a message:</strong></p>
+<div class="homeimage">
+    <div class="row">
+    
+        <div>
+            <br>
+            <div class="col-lg-6">
+              <img src="../static/images/map.jpg" style="width:350px">
+           </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="split-left">
+               <div class="centered">
+                  <form action="/action_page.php">
+                    <label for="fname"><strong>First Name</strong></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+                    <label for="lname"><strong>Last Name</strong></label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+                    <label for="country"><strong>Country</strong></label>
+                    <select id="country" name="country"><br>
+                    <option value="australia"><strong>Australia</strong></option>
+                    <option value="canada"><strong>Canada</strong></option>
+                    <option value="india"><strong>India</strong></option>
+                    <option value="usa"><strong>USA</strong></option>
+                    </select><br>
+                    <label for="subject"><strong>Subject</strong></label><br>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" style="width:100%"></textarea><br>
+                    <button class="btn btn-outline-success" type="button" onclick="alert('Thankyou for the Feedback')">Submit</button>
+                  </form>
+                </div>
+            </div>
+        
+        <br>
+    <div class="box-element">
+        <div class="col-lg-6">
+               <p><strong>For Queries and Complaints:</strong><br><strong>ph no:</strong>+91 2877567890 <br><strong>Email:</strong>>baeCafe@gmail.com <br></p>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-6">
+     <div class="box-element">
+       <div class="text-align:left">
+           <a style="color:#19c8c8" ></a><u>About Us</u></a>
+       </div>
+     </div>
+    </div>
+</div>
+{% endblock content %}
